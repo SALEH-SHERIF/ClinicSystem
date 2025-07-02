@@ -1,0 +1,14 @@
+﻿# Ignore appsettings and secrets
+
+appsettings.json
+appsettings.Development.json
+appsettings.Production.json
+
+bin/
+obj/
+
+*.user
+*.suo
+
+
+.vscode/
