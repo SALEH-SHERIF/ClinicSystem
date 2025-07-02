@@ -101,13 +101,13 @@ namespace ClinicSystem.Services
 						return ApiResponse<string>.Failure("Email already exists");
 					}
 				}
-				if(string.IsNullOrWhiteSpace(registerPatientDto.Nationality))
-                    return ApiResponse<string>.Failure("Nationality is required");
-				if (registerPatientDto.Nationality == "Egyptian" && string.IsNullOrWhiteSpace(registerPatientDto.NationalId))
-					return ApiResponse<string>.Failure("National ID is required");
+				//if(string.IsNullOrWhiteSpace(registerPatientDto.Nationality))
+    //                return ApiResponse<string>.Failure("Nationality is required");
+				//if (registerPatientDto.Nationality == "Egyptian" && string.IsNullOrWhiteSpace(registerPatientDto.NationalId))
+				//	return ApiResponse<string>.Failure("National ID is required");
 
-				if (registerPatientDto.Nationality == "Foreigner" && string.IsNullOrWhiteSpace(registerPatientDto.PassportNumber))
-					return ApiResponse<string>.Failure("Passport Number is required");
+				//if (registerPatientDto.Nationality == "Foreigner" && string.IsNullOrWhiteSpace(registerPatientDto.PassportNumber))
+				//	return ApiResponse<string>.Failure("Passport Number is required");
 				var user = new AppUser
 				{
 					FullName = registerPatientDto.FullName,

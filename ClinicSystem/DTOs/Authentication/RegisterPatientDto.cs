@@ -1,6 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using ClinicSystem.Validations;
+using System.ComponentModel.DataAnnotations;
 namespace ClinicSystem.DTOs
 {
+	[NationalityIdValidation]
 	public class RegisterPatientDto
 	{
 		[Required(ErrorMessage = "Full name is required")]
@@ -20,8 +22,8 @@ namespace ClinicSystem.DTOs
 		[RegularExpression("^(Egyptian|Foreigner)$", ErrorMessage = "Nationality must be either 'Egyptian' or 'Foreigner'")]
 		public string Nationality { get; set; } = string.Empty;
 
-		[StringLength(11, MinimumLength = 11, ErrorMessage = "National ID must be exactly 11 characters.")]
-		[RegularExpression(@"^\d{11}$", ErrorMessage = "National ID must contain only digits.")]
+		[StringLength(14, MinimumLength = 14, ErrorMessage = "National ID must be exactly 14 characters.")]
+		[RegularExpression(@"^\d{14}$", ErrorMessage = "National ID must contain only digits.")]
 		public string? NationalId { get; set; }
 
 		[StringLength(9, MinimumLength = 6, ErrorMessage = "Passport number must be between 6 and 9 characters.")]
