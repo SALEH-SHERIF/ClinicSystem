@@ -15,6 +15,8 @@ namespace ClinicSystem.Interfaces
 		Task<List<AppUser>> GetUsersByRoleAsync(string role);
 		Task<AppUser?> GetByIdAsync(string id);
 		Task<bool> DeleteUserAsync(AppUser user);
+		Task<bool> UpdateSecurityStampAsync(AppUser user);
+		Task<bool> UpdateUserAsync(AppUser user);
 
 
 

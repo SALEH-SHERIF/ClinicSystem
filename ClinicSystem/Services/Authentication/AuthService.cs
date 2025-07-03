@@ -5,6 +5,7 @@ using ClinicSystem.Models;
 
 using ClinicSystem.Models.Enums;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using static System.Net.WebRequestMethods;
@@ -81,6 +82,14 @@ namespace ClinicSystem.Services
 				{
 					if (!exists.EmailConfirmed)
 					{
+						exists.FullName = registerPatientDto.FullName;
+						exists.PhoneNumber = registerPatientDto.PhoneNumber;
+						exists.Nationality = registerPatientDto.Nationality;
+						exists.NationalId = registerPatientDto.Nationality == "Egyptian" ? registerPatientDto.NationalId : null;
+						exists.PassportNumber = registerPatientDto.Nationality == "Foreigner" ? registerPatientDto.PassportNumber : null;
+
+						await _authRepository.UpdateUserAsync(exists);
+
 
 						var newOtp = await _otpRepository.ResendOtpAsync(exists , OtpPurpose.EmailVerification);
 						if (newOtp == null)
@@ -94,20 +103,15 @@ namespace ClinicSystem.Services
 						};
 						await _mailService.SendEmailAsync(resendMsg);
 
-						return ApiResponse<string>.Failure("Your email is registered but not confirmed. A new OTP has been sent.");
+						return ApiResponse<string>.SuccessResponse("Your account is not yet confirmed. A new OTP has been sent to your email.");
+
 					}
 					else
 					{
 						return ApiResponse<string>.Failure("Email already exists");
 					}
 				}
-				//if(string.IsNullOrWhiteSpace(registerPatientDto.Nationality))
-    //                return ApiResponse<string>.Failure("Nationality is required");
-				//if (registerPatientDto.Nationality == "Egyptian" && string.IsNullOrWhiteSpace(registerPatientDto.NationalId))
-				//	return ApiResponse<string>.Failure("National ID is required");
-
-				//if (registerPatientDto.Nationality == "Foreigner" && string.IsNullOrWhiteSpace(registerPatientDto.PassportNumber))
-				//	return ApiResponse<string>.Failure("Passport Number is required");
+			
 				var user = new AppUser
 				{
 					FullName = registerPatientDto.FullName,
@@ -233,8 +237,10 @@ namespace ClinicSystem.Services
 				return ApiResponse<string>.Failure("Failed to reset password");
 
 			await _otpRepository.MarkOtpAsUsedAsync(otp);
+			await _authRepository.UpdateSecurityStampAsync(user);
 
-			return ApiResponse<string>.SuccessResponse("Password has been reset successfully");
+
+			return ApiResponse<string>.SuccessResponse("Password has been reset successfully. Please login again.");
 		}
 
 		public async Task<ApiResponse<string>> VerifyOtpAsync(VerifyOtpDto dto)

@@ -23,7 +23,8 @@ namespace ClinicSystem.Services
 		new Claim(ClaimTypes.NameIdentifier, user.Id),
 		new Claim(ClaimTypes.Name, user.FullName),
 		new Claim(ClaimTypes.Email, user.Email),
-		new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+		new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+
 		 };
 
 			foreach (var role in roles)

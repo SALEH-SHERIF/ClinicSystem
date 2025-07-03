@@ -100,7 +100,19 @@ namespace ClinicSystem.Controllers
 			var result = await _authService.ResetPasswordAsync(dto);
 			if (!result.Success)
 				return BadRequest(result);
-			return Ok(result);
+
+			if (Request.Cookies.ContainsKey("jwt"))
+			{
+				Response.Cookies.Delete("jwt", new CookieOptions
+				{
+					HttpOnly = true,
+					Secure = true,         // نفس اللي مستخدم في Append
+					SameSite = SameSiteMode.None,
+					Path = "/"
+				});
+			}
+				return Ok(result);
+			
 		}
 
 		[HttpPost("logout")]
