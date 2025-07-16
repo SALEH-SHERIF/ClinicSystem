@@ -21,6 +21,7 @@ namespace ClinicSystem.Interfaces
 		Task<ApiResponse<List<UserSummaryDto>>> GetUsersByRoleAsync(string role);
         Task<ApiResponse<string>> DeleteReceptionistAsync(string id);
 		Task<ApiResponse<string>> DeletePatientAsync(string patientId);
+		Task<ApiResponse<string>> ChangePasswordAsync(ChangePasswordDto dto, HttpContext httpContext);
 
 
 	}

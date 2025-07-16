@@ -59,15 +59,20 @@ namespace ClinicSystem.Repositories
 			var result = await _userManager.DeleteAsync(user);
 			return result.Succeeded;
 		}
-		public async Task<bool> UpdateSecurityStampAsync(AppUser user)
+		public async Task UpdateSecurityStampAsync(AppUser user)
 		{
-			var result = await _userManager.UpdateSecurityStampAsync(user);
-			return result.Succeeded;
+			await _userManager.UpdateSecurityStampAsync(user);
 		}
+
 		public async Task<bool> UpdateUserAsync(AppUser user)
 		{
 			var result = await _userManager.UpdateAsync(user);
 			return result.Succeeded;
+		}
+		public async Task<IdentityResult> ChangePasswordAsync(AppUser user, string newPassword)
+		{
+			var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+			return await _userManager.ResetPasswordAsync(user, token, newPassword);
 		}
 
 

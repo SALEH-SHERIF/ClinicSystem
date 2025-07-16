@@ -1,14 +1,25 @@
 ﻿using ClinicSystem.Validations;
 using System.ComponentModel.DataAnnotations;
+using static System.Net.Mime.MediaTypeNames;
 namespace ClinicSystem.DTOs
 {
 	[NationalityIdValidation]
 	public class RegisterPatientDto
 	{
-		[Required(ErrorMessage = "Full name is required")]
-		[StringLength(30, MinimumLength = 5, ErrorMessage = "Full name must be between 5 and 30 characters")]
-		[RegularExpression(@"^[a-zA-Z\s]+$", ErrorMessage = "Full name must contain only letters and spaces")]
-		public string FullName { get; set; } = string.Empty;
+		[Required(ErrorMessage = "Arabic full name is required")]
+		[StringLength(30, MinimumLength = 5, ErrorMessage = "Name must be between 5 and 30 characters")]
+		[RegularExpression(@"^[\u0600-\u06FF\s]+$", ErrorMessage = "Arabic name must contain only Arabic letters and spaces")]
+		public string ArabicFullName { get; set; } = string.Empty;
+
+		[Required(ErrorMessage = "English full name is required")]
+		[StringLength(30, MinimumLength = 5, ErrorMessage = "Name must be between 5 and 30 characters")]
+		[RegularExpression(@"^[a-zA-Z\s]+$", ErrorMessage = "English name must contain only letters and spaces")]
+		public string EnglishFullName { get; set; } = string.Empty;
+
+		[Required(ErrorMessage = "Birthdate is required")]
+		[DataType(DataType.Date)]
+		[BirthDateValidation(MinAge = 0, MaxAge = 120)]
+		public DateTime BirthDate { get; set; }
 
 		[Required(ErrorMessage = "Email is required")]
 		[EmailAddress(ErrorMessage = "Invalid email format")]

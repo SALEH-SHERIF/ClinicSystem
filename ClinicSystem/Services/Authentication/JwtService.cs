@@ -23,7 +23,8 @@ namespace ClinicSystem.Services
 		new Claim(ClaimTypes.NameIdentifier, user.Id),
 		new Claim(ClaimTypes.Name, user.FullName),
 		new Claim(ClaimTypes.Email, user.Email),
-		new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+		new Claim("SecurityStamp", user.SecurityStamp),
+       new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
 
 		 };
 
@@ -42,6 +43,21 @@ namespace ClinicSystem.Services
 				signingCredentials: creds);
 
 			return new JwtSecurityTokenHandler().WriteToken(token);
+		}
+		public string GetUserIdFromToken(HttpContext httpContext)
+		{
+			var token = httpContext.Request.Cookies["jwt"];
+			if (string.IsNullOrEmpty(token))
+				return null;
+
+			var handler = new JwtSecurityTokenHandler();
+			var jwtToken = handler.ReadJwtToken(token);
+
+			var userId = jwtToken.Claims
+				.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier || c.Type == "sub")
+				?.Value;
+
+			return userId;
 		}
 	}
 }

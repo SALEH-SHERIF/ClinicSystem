@@ -1,4 +1,5 @@
 ﻿using ClinicSystem.DTOs;
+using ClinicSystem.DTOs.Authentication;
 using ClinicSystem.Models;
 using Microsoft.AspNetCore.Identity;
 
@@ -15,9 +16,12 @@ namespace ClinicSystem.Interfaces
 		Task<List<AppUser>> GetUsersByRoleAsync(string role);
 		Task<AppUser?> GetByIdAsync(string id);
 		Task<bool> DeleteUserAsync(AppUser user);
-		Task<bool> UpdateSecurityStampAsync(AppUser user);
-		Task<bool> UpdateUserAsync(AppUser user);
+		Task UpdateSecurityStampAsync(AppUser user);
 
+		Task<bool> UpdateUserAsync(AppUser user);
+		
+
+		Task<IdentityResult> ChangePasswordAsync(AppUser user, string newPassword);
 
 
 	}

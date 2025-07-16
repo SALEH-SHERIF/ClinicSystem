@@ -10,6 +10,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using System.Security.Claims;
 using System.Text;
 
 namespace ClinicSystem
@@ -92,6 +93,9 @@ namespace ClinicSystem
 			builder.Services.AddScoped<IMailService, MailService>();
 			builder.Services.AddScoped<IJwtService, JwtService>();
 			builder.Services.AddScoped<SeedUserService>();
+			builder.Services.AddScoped<IPatientRepository, PatientRepository>();
+			builder.Services.AddScoped<IReceptionistRepository, ReceptionistRepository>();
+
 
 			#endregion
 
@@ -127,6 +131,40 @@ namespace ClinicSystem
 
 			#region JWT Authentication with Cookie support
 
+			//builder.Services.AddAuthentication(options =>
+			//{
+			//	options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+			//	options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+			//})
+			//.AddJwtBearer(options =>
+			//{
+			//	options.Events = new JwtBearerEvents
+			//	{
+			//		OnMessageReceived = context =>
+			//		{
+			//			// ????? ?????? ?? ??????? ???? "jwt"
+			//			if (context.Request.Cookies.ContainsKey("jwt"))
+			//				context.Token = context.Request.Cookies["jwt"];
+
+			//			return Task.CompletedTask;
+			//		}
+			//	};
+
+			//	options.TokenValidationParameters = new TokenValidationParameters
+			//	{
+			//		ValidateIssuer = true,
+			//		ValidateAudience = true,
+			//		ValidateLifetime = true,
+			//		ValidateIssuerSigningKey = true,
+			//		ValidIssuer = builder.Configuration["JwtSettings:Issuer"],
+			//		ValidAudience = builder.Configuration["JwtSettings:Audience"],
+			//		IssuerSigningKey = new SymmetricSecurityKey(
+			//			Encoding.UTF8.GetBytes(builder.Configuration["JwtSettings:SecretKey"])
+			//		)
+			//	};
+			//});
+			#region JWT Authentication with Cookie support
+
 			builder.Services.AddAuthentication(options =>
 			{
 				options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -138,11 +176,24 @@ namespace ClinicSystem
 				{
 					OnMessageReceived = context =>
 					{
-						// ????? ?????? ?? ??????? ???? "jwt"
+						// ????? ?????? ?? ??????
 						if (context.Request.Cookies.ContainsKey("jwt"))
 							context.Token = context.Request.Cookies["jwt"];
 
 						return Task.CompletedTask;
+					},
+					OnTokenValidated = async context =>
+					{
+						var userManager = context.HttpContext.RequestServices.GetRequiredService<UserManager<AppUser>>();
+						var userId = context.Principal.FindFirstValue(ClaimTypes.NameIdentifier);
+						var tokenStamp = context.Principal.FindFirstValue("SecurityStamp");
+
+						var user = await userManager.FindByIdAsync(userId);
+
+						if (user == null || user.SecurityStamp != tokenStamp)
+						{
+							context.Fail("Token is no longer valid");
+						}
 					}
 				};
 
@@ -162,18 +213,24 @@ namespace ClinicSystem
 
 			#endregion
 
+
+			#endregion
+
 			#region CORS
 
 			builder.Services.AddCors(options =>
 			{
 				options.AddPolicy("AllowFrontend", policy =>
 				{
-					policy.WithOrigins("http://localhost:8080") // ????? ??????? ????? ??? ??????
+					policy.WithOrigins(
+							  "https://lamaclinic.netlify.app",
+							  "http://localhost:8080")
 						  .AllowAnyHeader()
 						  .AllowAnyMethod()
-						  .AllowCredentials(); // ??? ???? ?????? ?????? ???????
+						  .AllowCredentials();
 				});
 			});
+
 
 			#endregion
 

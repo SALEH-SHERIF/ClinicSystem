@@ -40,16 +40,16 @@ namespace ClinicSystem.Controllers
 			return Ok(response);
 		}
 
-
 		[HttpPost("verify-otp")]
 		public async Task<IActionResult> VerifyOtp([FromBody] VerifyOtpDto dto)
 		{
 			var result = await _authService.VerifyOtpAsync(dto);
 			if (!result.Success)
-				return BadRequest(ApiResponse<string>.Failure(result.Message));
+				return StatusCode(422, ApiResponse<string>.Failure(result.Message));
+
 			return Ok(ApiResponse<string>.SuccessResponse(result.Message));
 		}
-		
+
 		[HttpPost("login")]
 		public async Task<IActionResult> Login([FromBody] LoginDto loginDto)
 		{
@@ -90,7 +90,8 @@ namespace ClinicSystem.Controllers
 		{
 			var result = await _authService.VerifyResetOtpAsync(verifyOtpDto);
 			if (!result.Success)
-				return BadRequest(result);
+				return StatusCode(422, result);
+
 			return Ok(result);
 		}
 		
@@ -106,7 +107,7 @@ namespace ClinicSystem.Controllers
 				Response.Cookies.Delete("jwt", new CookieOptions
 				{
 					HttpOnly = true,
-					Secure = true,         // نفس اللي مستخدم في Append
+					Secure = true,         
 					SameSite = SameSiteMode.None,
 					Path = "/"
 				});
@@ -123,7 +124,7 @@ namespace ClinicSystem.Controllers
 				Response.Cookies.Delete("jwt", new CookieOptions
 				{
 					HttpOnly = true,
-					Secure = true,         // نفس اللي مستخدم في Append
+					Secure = true,         
 					SameSite = SameSiteMode.None,
 					Path = "/"
 				});
@@ -176,6 +177,16 @@ namespace ClinicSystem.Controllers
 
 			return Ok(result);
 		}
+		[HttpPost("change-password")]
+		[Authorize]
+		public async Task<IActionResult> ChangePassword([FromBody] ChangePasswordDto dto)
+		{
+			var result = await _authService.ChangePasswordAsync(dto, HttpContext);
+			if(result.Success) 
+			 return Ok(result);
+			return BadRequest(result);
+		}
+
 
 	}
 }

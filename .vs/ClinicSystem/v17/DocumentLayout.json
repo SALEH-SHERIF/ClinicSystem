@@ -3,28 +3,40 @@
   "WorkspaceRootPath": "G:\\New folder\\ClinicSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|G:\\New folder\\ClinicSystem\\clinicsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|solutionrelative:clinicsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|g:\\new folder\\clinicsystem\\clinicsystem\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|solutionrelative:clinicsystem\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|g:\\new folder\\clinicsystem\\clinicsystem\\services\\authentication\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|solutionrelative:clinicsystem\\services\\authentication\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|G:\\New folder\\ClinicSystem\\clinicsystem\\repositories\\authentication\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|solutionrelative:clinicsystem\\repositories\\authentication\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|G:\\New folder\\ClinicSystem\\clinicsystem\\models\\receptionistprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|solutionrelative:clinicsystem\\models\\receptionistprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|G:\\New folder\\ClinicSystem\\clinicsystem\\interfaces\\authentication\\iauthrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|solutionrelative:clinicsystem\\interfaces\\authentication\\iauthrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|G:\\New folder\\ClinicSystem\\clinicsystem\\repositories\\receptionistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|solutionrelative:clinicsystem\\repositories\\receptionistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|G:\\New folder\\ClinicSystem\\clinicsystem\\services\\authentication\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|solutionrelative:clinicsystem\\services\\authentication\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|G:\\New folder\\ClinicSystem\\clinicsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|solutionrelative:clinicsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|G:\\New folder\\ClinicSystem\\clinicsystem\\interfaces\\ireceptionistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|solutionrelative:clinicsystem\\interfaces\\ireceptionistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|G:\\New folder\\ClinicSystem\\clinicsystem\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|solutionrelative:clinicsystem\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|G:\\New folder\\ClinicSystem\\clinicsystem\\interfaces\\ipatientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|solutionrelative:clinicsystem\\interfaces\\ipatientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|G:\\New folder\\ClinicSystem\\clinicsystem\\repositories\\patientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|solutionrelative:clinicsystem\\repositories\\patientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|G:\\New folder\\ClinicSystem\\clinicsystem\\dtos\\authentication\\registerpatientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,6 +45,66 @@
     {
       "AbsoluteMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|G:\\New folder\\ClinicSystem\\clinicsystem\\validations\\nationalityidvalidationattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|solutionrelative:clinicsystem\\validations\\nationalityidvalidationattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|G:\\New folder\\ClinicSystem\\clinicsystem\\validations\\internationalphonenumberattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|solutionrelative:clinicsystem\\validations\\internationalphonenumberattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|G:\\New folder\\ClinicSystem\\clinicsystem\\validations\\birthdatevalidationattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|solutionrelative:clinicsystem\\validations\\birthdatevalidationattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|G:\\New folder\\ClinicSystem\\clinicsystem\\models\\authentication\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|solutionrelative:clinicsystem\\models\\authentication\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|G:\\New folder\\ClinicSystem\\clinicsystem\\repositories\\authentication\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|solutionrelative:clinicsystem\\repositories\\authentication\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|G:\\New folder\\ClinicSystem\\clinicsystem\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|solutionrelative:clinicsystem\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|G:\\New folder\\ClinicSystem\\clinicsystem\\models\\doctorprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|solutionrelative:clinicsystem\\models\\doctorprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|G:\\New folder\\ClinicSystem\\clinicsystem\\models\\patientprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|solutionrelative:clinicsystem\\models\\patientprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|G:\\New folder\\ClinicSystem\\clinicsystem\\models\\authentication\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|solutionrelative:clinicsystem\\models\\authentication\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|G:\\New folder\\ClinicSystem\\clinicsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|solutionrelative:clinicsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|G:\\New folder\\ClinicSystem\\clinicsystem\\migrations\\20250714194509_add birthdatacolumn , fullnamearabicandenglish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|solutionrelative:clinicsystem\\migrations\\20250714194509_add birthdatacolumn , fullnamearabicandenglish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|G:\\New folder\\ClinicSystem\\clinicsystem\\services\\authentication\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|solutionrelative:clinicsystem\\services\\authentication\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|G:\\New folder\\ClinicSystem\\clinicsystem\\interfaces\\authentication\\iauthrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|solutionrelative:clinicsystem\\interfaces\\authentication\\iauthrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|G:\\New folder\\ClinicSystem\\clinicsystem\\dtos\\authentication\\changepassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|solutionrelative:clinicsystem\\dtos\\authentication\\changepassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|G:\\New folder\\ClinicSystem\\clinicsystem\\interfaces\\authentication\\ijwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|solutionrelative:clinicsystem\\interfaces\\authentication\\ijwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|G:\\New folder\\ClinicSystem\\clinicsystem\\interfaces\\authentication\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88C80FF0-4783-4AD7-B48C-530EA0BECED5}|ClinicSystem\\ClinicSystem.csproj|solutionrelative:clinicsystem\\interfaces\\authentication\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -63,73 +135,289 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": ".gitignore",
+              "DocumentMoniker": "G:\\New folder\\ClinicSystem\\ClinicSystem\\.gitignore",
+              "RelativeDocumentMoniker": "ClinicSystem\\.gitignore",
+              "ToolTip": "G:\\New folder\\ClinicSystem\\ClinicSystem\\.gitignore",
+              "RelativeToolTip": "ClinicSystem\\.gitignore",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-07-16T04:02:27.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ReceptionistRepository.cs",
+              "DocumentMoniker": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Repositories\\ReceptionistRepository.cs",
+              "RelativeDocumentMoniker": "ClinicSystem\\Repositories\\ReceptionistRepository.cs",
+              "ToolTip": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Repositories\\ReceptionistRepository.cs",
+              "RelativeToolTip": "ClinicSystem\\Repositories\\ReceptionistRepository.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwAYAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T05:00:52.218Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IReceptionistRepository.cs",
+              "DocumentMoniker": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Interfaces\\IReceptionistRepository.cs",
+              "RelativeDocumentMoniker": "ClinicSystem\\Interfaces\\IReceptionistRepository.cs",
+              "ToolTip": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Interfaces\\IReceptionistRepository.cs",
+              "RelativeToolTip": "ClinicSystem\\Interfaces\\IReceptionistRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T05:00:24.639Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PatientRepository.cs",
+              "DocumentMoniker": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Repositories\\PatientRepository.cs",
+              "RelativeDocumentMoniker": "ClinicSystem\\Repositories\\PatientRepository.cs",
+              "ToolTip": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Repositories\\PatientRepository.cs",
+              "RelativeToolTip": "ClinicSystem\\Repositories\\PatientRepository.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAwBYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T04:48:17.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IPatientRepository.cs",
+              "DocumentMoniker": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Interfaces\\IPatientRepository.cs",
+              "RelativeDocumentMoniker": "ClinicSystem\\Interfaces\\IPatientRepository.cs",
+              "ToolTip": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Interfaces\\IPatientRepository.cs",
+              "RelativeToolTip": "ClinicSystem\\Interfaces\\IPatientRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T04:47:12.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Models\\Authentication\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "ClinicSystem\\Models\\Authentication\\ApiResponse.cs",
+              "ToolTip": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Models\\Authentication\\ApiResponse.cs",
+              "RelativeToolTip": "ClinicSystem\\Models\\Authentication\\ApiResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T04:42:12.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "ClinicSystem\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "ClinicSystem\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAiwB8AAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T20:19:20.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ReceptionistProfile.cs",
+              "DocumentMoniker": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Models\\ReceptionistProfile.cs",
+              "RelativeDocumentMoniker": "ClinicSystem\\Models\\ReceptionistProfile.cs",
+              "ToolTip": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Models\\ReceptionistProfile.cs",
+              "RelativeToolTip": "ClinicSystem\\Models\\ReceptionistProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T20:08:35.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DoctorProfile.cs",
+              "DocumentMoniker": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Models\\DoctorProfile.cs",
+              "RelativeDocumentMoniker": "ClinicSystem\\Models\\DoctorProfile.cs",
+              "ToolTip": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Models\\DoctorProfile.cs",
+              "RelativeToolTip": "ClinicSystem\\Models\\DoctorProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T20:07:54.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PatientProfile.cs",
+              "DocumentMoniker": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Models\\PatientProfile.cs",
+              "RelativeDocumentMoniker": "ClinicSystem\\Models\\PatientProfile.cs",
+              "ToolTip": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Models\\PatientProfile.cs",
+              "RelativeToolTip": "ClinicSystem\\Models\\PatientProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T20:07:05.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "G:\\New folder\\ClinicSystem\\ClinicSystem\\appsettings.json",
+              "RelativeDocumentMoniker": "ClinicSystem\\appsettings.json",
+              "ToolTip": "G:\\New folder\\ClinicSystem\\ClinicSystem\\appsettings.json",
+              "RelativeToolTip": "ClinicSystem\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-14T19:49:32.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "20250714194509_Add BirthDataColumn , FullNameArabicAndEnglish.cs",
+              "DocumentMoniker": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Migrations\\20250714194509_Add BirthDataColumn , FullNameArabicAndEnglish.cs",
+              "RelativeDocumentMoniker": "ClinicSystem\\Migrations\\20250714194509_Add BirthDataColumn , FullNameArabicAndEnglish.cs",
+              "ToolTip": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Migrations\\20250714194509_Add BirthDataColumn , FullNameArabicAndEnglish.cs",
+              "RelativeToolTip": "ClinicSystem\\Migrations\\20250714194509_Add BirthDataColumn , FullNameArabicAndEnglish.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T19:45:10.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BirthDateValidationAttribute.cs",
+              "DocumentMoniker": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Validations\\BirthDateValidationAttribute.cs",
+              "RelativeDocumentMoniker": "ClinicSystem\\Validations\\BirthDateValidationAttribute.cs",
+              "ToolTip": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Validations\\BirthDateValidationAttribute.cs",
+              "RelativeToolTip": "ClinicSystem\\Validations\\BirthDateValidationAttribute.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T19:36:33.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Models\\Authentication\\AppUser.cs",
+              "RelativeDocumentMoniker": "ClinicSystem\\Models\\Authentication\\AppUser.cs",
+              "ToolTip": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Models\\Authentication\\AppUser.cs",
+              "RelativeToolTip": "ClinicSystem\\Models\\Authentication\\AppUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T19:30:11.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IJwtService.cs",
+              "DocumentMoniker": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Interfaces\\Authentication\\IJwtService.cs",
+              "RelativeDocumentMoniker": "ClinicSystem\\Interfaces\\Authentication\\IJwtService.cs",
+              "ToolTip": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Interfaces\\Authentication\\IJwtService.cs",
+              "RelativeToolTip": "ClinicSystem\\Interfaces\\Authentication\\IJwtService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T18:46:29.221Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Interfaces\\Authentication\\IAuthService.cs",
+              "RelativeDocumentMoniker": "ClinicSystem\\Interfaces\\Authentication\\IAuthService.cs",
+              "ToolTip": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Interfaces\\Authentication\\IAuthService.cs",
+              "RelativeToolTip": "ClinicSystem\\Interfaces\\Authentication\\IAuthService.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAzwBcAAABgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T18:43:48.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ChangePasswordDto.cs",
+              "DocumentMoniker": "G:\\New folder\\ClinicSystem\\ClinicSystem\\DTOs\\Authentication\\ChangePasswordDto.cs",
+              "RelativeDocumentMoniker": "ClinicSystem\\DTOs\\Authentication\\ChangePasswordDto.cs",
+              "ToolTip": "G:\\New folder\\ClinicSystem\\ClinicSystem\\DTOs\\Authentication\\ChangePasswordDto.cs",
+              "RelativeToolTip": "ClinicSystem\\DTOs\\Authentication\\ChangePasswordDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAACFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T18:41:37.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "InternationalPhoneNumberAttribute.cs",
+              "DocumentMoniker": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Validations\\InternationalPhoneNumberAttribute.cs",
+              "RelativeDocumentMoniker": "ClinicSystem\\Validations\\InternationalPhoneNumberAttribute.cs",
+              "ToolTip": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Validations\\InternationalPhoneNumberAttribute.cs",
+              "RelativeToolTip": "ClinicSystem\\Validations\\InternationalPhoneNumberAttribute.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T14:45:46.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Program.cs",
               "RelativeDocumentMoniker": "ClinicSystem\\Program.cs",
               "ToolTip": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Program.cs",
               "RelativeToolTip": "ClinicSystem\\Program.cs",
-              "ViewState": "AQIAAFYAAAAAAAAAAAAAAHwAAAAAAAAA",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAYwGEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T18:28:01.078Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-02T18:28:01.078Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "AccountController.cs",
               "DocumentMoniker": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "ClinicSystem\\Controllers\\AccountController.cs",
               "ToolTip": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Controllers\\AccountController.cs",
               "RelativeToolTip": "ClinicSystem\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAAGEAAAAAAAAAAADwv3AAAAAEAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAA6wH4AAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-02T18:22:50.564Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 14,
               "Title": "AuthRepository.cs",
               "DocumentMoniker": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Repositories\\Authentication\\AuthRepository.cs",
               "RelativeDocumentMoniker": "ClinicSystem\\Repositories\\Authentication\\AuthRepository.cs",
               "ToolTip": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Repositories\\Authentication\\AuthRepository.cs",
               "RelativeToolTip": "ClinicSystem\\Repositories\\Authentication\\AuthRepository.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAwwEcAAAAAAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAEwCMAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-02T18:31:45.636Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 22,
               "Title": "IAuthRepository.cs",
               "DocumentMoniker": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Interfaces\\Authentication\\IAuthRepository.cs",
               "RelativeDocumentMoniker": "ClinicSystem\\Interfaces\\Authentication\\IAuthRepository.cs",
               "ToolTip": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Interfaces\\Authentication\\IAuthRepository.cs",
               "RelativeToolTip": "ClinicSystem\\Interfaces\\Authentication\\IAuthRepository.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAAAAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAA1wBcAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-02T18:31:25.499Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 21,
               "Title": "JwtService.cs",
               "DocumentMoniker": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Services\\Authentication\\JwtService.cs",
               "RelativeDocumentMoniker": "ClinicSystem\\Services\\Authentication\\JwtService.cs",
               "ToolTip": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Services\\Authentication\\JwtService.cs",
               "RelativeToolTip": "ClinicSystem\\Services\\Authentication\\JwtService.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAA7wBkAAABEAAAA",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAAAD8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-02T18:17:03.099Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "NationalityIdValidationAttribute.cs",
               "DocumentMoniker": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Validations\\NationalityIdValidationAttribute.cs",
               "RelativeDocumentMoniker": "ClinicSystem\\Validations\\NationalityIdValidationAttribute.cs",
               "ToolTip": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Validations\\NationalityIdValidationAttribute.cs",
               "RelativeToolTip": "ClinicSystem\\Validations\\NationalityIdValidationAttribute.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAQwCkAAAAAAAAA",
+              "ViewState": "AQIAAAEAAAAAAAAAAADwvykAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-02T17:34:57.754Z"
             },
@@ -141,20 +429,20 @@
               "RelativeDocumentMoniker": "ClinicSystem\\Services\\Authentication\\AuthService.cs",
               "ToolTip": "G:\\New folder\\ClinicSystem\\ClinicSystem\\Services\\Authentication\\AuthService.cs",
               "RelativeToolTip": "ClinicSystem\\Services\\Authentication\\AuthService.cs",
-              "ViewState": "AQIAAFkAAAAAAAAAAAAAwGoAAAAAAAAA",
+              "ViewState": "AQIAAEIBAAAAAAAAAAAAAEEBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-02T17:30:53.526Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "RegisterPatientDto.cs",
               "DocumentMoniker": "G:\\New folder\\ClinicSystem\\ClinicSystem\\DTOs\\Authentication\\RegisterPatientDto.cs",
               "RelativeDocumentMoniker": "ClinicSystem\\DTOs\\Authentication\\RegisterPatientDto.cs",
               "ToolTip": "G:\\New folder\\ClinicSystem\\ClinicSystem\\DTOs\\Authentication\\RegisterPatientDto.cs",
               "RelativeToolTip": "ClinicSystem\\DTOs\\Authentication\\RegisterPatientDto.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAYwBYAAAA5AAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAwBUAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-02T17:28:55.084Z"
             }

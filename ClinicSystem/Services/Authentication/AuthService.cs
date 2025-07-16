@@ -4,10 +4,13 @@ using ClinicSystem.Interfaces;
 using ClinicSystem.Models;
 
 using ClinicSystem.Models.Enums;
+using ClinicSystem.Repositories;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 using static System.Net.WebRequestMethods;
 
 namespace ClinicSystem.Services
@@ -18,14 +21,19 @@ namespace ClinicSystem.Services
 		private readonly IJwtService _jwtService;
 		private readonly IOtpRepository _otpRepository;
 		private readonly IMailService _mailService;
+		private readonly IPatientRepository _patientRepository;
+		private readonly IReceptionistRepository _receptionistRepository;
 
 
-		public AuthService(IAuthRepository authRepo, IOtpRepository otpRepository , IMailService mailService, IJwtService jwtService)
+
+		public AuthService(IAuthRepository authRepo, IOtpRepository otpRepository , IMailService mailService, IJwtService jwtService, IPatientRepository patientRepository, IReceptionistRepository receptionistRepository)
 		{
 			_authRepository = authRepo;
 			_otpRepository = otpRepository;
 			_mailService = mailService;
 			_jwtService = jwtService;
+			_patientRepository = patientRepository;
+			_receptionistRepository = receptionistRepository;
 		}
 
 		public async Task<ApiResponse<LoginResponseDto>> LoginAsync(LoginDto loginDto, HttpContext httpContext)
@@ -82,11 +90,13 @@ namespace ClinicSystem.Services
 				{
 					if (!exists.EmailConfirmed)
 					{
-						exists.FullName = registerPatientDto.FullName;
-						exists.PhoneNumber = registerPatientDto.PhoneNumber;
+						exists.FullNameArabic = registerPatientDto.ArabicFullName;
+						exists.FullName = registerPatientDto.EnglishFullName;
+                        exists.PhoneNumber = registerPatientDto.PhoneNumber;
 						exists.Nationality = registerPatientDto.Nationality;
 						exists.NationalId = registerPatientDto.Nationality == "Egyptian" ? registerPatientDto.NationalId : null;
 						exists.PassportNumber = registerPatientDto.Nationality == "Foreigner" ? registerPatientDto.PassportNumber : null;
+						exists.BirthDate = registerPatientDto.BirthDate; 
 
 						await _authRepository.UpdateUserAsync(exists);
 
@@ -114,13 +124,15 @@ namespace ClinicSystem.Services
 			
 				var user = new AppUser
 				{
-					FullName = registerPatientDto.FullName,
+					FullName = registerPatientDto.EnglishFullName,
+					FullNameArabic=registerPatientDto.ArabicFullName,
 					Email = registerPatientDto.Email,
 					UserName = registerPatientDto.Email,
 					PhoneNumber = registerPatientDto.PhoneNumber,
 					Nationality = registerPatientDto.Nationality,
 					NationalId = registerPatientDto.Nationality == "Egyptian" ? registerPatientDto.NationalId : null,
 					PassportNumber = registerPatientDto.Nationality == "Foreigner" ? registerPatientDto.PassportNumber : null,
+					BirthDate = registerPatientDto.BirthDate,
 					EmailConfirmed = false
 				};
 				var created = await _authRepository.CreateAsync(user, registerPatientDto.Password);
@@ -128,6 +140,12 @@ namespace ClinicSystem.Services
 					return ApiResponse<string>.Failure("User creation failed");
 
 				await _authRepository.AddToRoleAsync(user, "Patient");
+				var patientProfile = new PatientProfile
+				{
+					AppUserId = user.Id,
+				};
+
+				await _patientRepository.CreateAsync(patientProfile);
 
 				var otp = await _otpRepository.GenerateAndStoreOtpAsync(user ,OtpPurpose.EmailVerification);
 
@@ -138,7 +156,7 @@ namespace ClinicSystem.Services
 				{
 					Subject = "Your OTP Is On Its Way!",
 					Body = $@"
-               <p>Hello {registerPatientDto.FullName},</p>
+               <p>Hello {registerPatientDto.EnglishFullName},</p>
               <p>We noticed that you requested an OTP again. Don't worry, your previous code is still valid!</p>
               <p>Here is your One-Time Password (OTP):</p>
               <h1 style='color: #00bfff;'>{otp.Code}</h1>
@@ -296,6 +314,11 @@ namespace ClinicSystem.Services
 					return ApiResponse<string>.Failure("Failed to create receptionist account");
 
 				await _authRepository.AddToRoleAsync(receptionist, "Receptionist");
+				await _receptionistRepository.CreateAsync(new ReceptionistProfile
+				{
+					AppUserId = receptionist.Id,
+					
+				});
 
 				return ApiResponse<string>.SuccessResponse("Receptionist added successfully");
 			}
@@ -378,6 +401,34 @@ namespace ClinicSystem.Services
 				return ApiResponse<string>.Failure("Unexpected error: " + error);
 			}
 		}
+
+		public async Task<ApiResponse<string>> ChangePasswordAsync(ChangePasswordDto model, HttpContext httpContext)
+		{
+			var userId = _jwtService.GetUserIdFromToken(httpContext);
+			if (string.IsNullOrEmpty(userId))
+				return ApiResponse<string>.Failure("Unauthorized");
+
+			var user = await _authRepository.GetByIdAsync(userId);
+			if (user == null)
+				return ApiResponse<string>.Failure("User not found");
+
+			var isOldPasswordValid = await _authRepository.CheckPasswordAsync(user, model.OldPassword);
+			if (!isOldPasswordValid)
+				return ApiResponse<string>.Failure("Old password is incorrect");
+
+			var result = await _authRepository.ChangePasswordAsync(user,  model.NewPassword);
+			if (!result.Succeeded)
+				return ApiResponse<string>.Failure("Failed to change password");
+
+			
+			await _authRepository.UpdateSecurityStampAsync(user);
+
+			
+			httpContext.Response.Cookies.Delete("jwt");
+
+			return ApiResponse<string>.SuccessResponse("Password changed successfully. Please log in again.");
+		}
+
 
 
 	}
